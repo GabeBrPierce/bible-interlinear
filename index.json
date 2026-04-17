@@ -1,0 +1,334 @@
+{
+  "books": [
+    {
+      "id": "GEN",
+      "testament": "OT",
+      "chapters": 50
+    },
+    {
+      "id": "EXO",
+      "testament": "OT",
+      "chapters": 40
+    },
+    {
+      "id": "LEV",
+      "testament": "OT",
+      "chapters": 27
+    },
+    {
+      "id": "NUM",
+      "testament": "OT",
+      "chapters": 36
+    },
+    {
+      "id": "DEU",
+      "testament": "OT",
+      "chapters": 34
+    },
+    {
+      "id": "JOS",
+      "testament": "OT",
+      "chapters": 24
+    },
+    {
+      "id": "JDG",
+      "testament": "OT",
+      "chapters": 21
+    },
+    {
+      "id": "RUT",
+      "testament": "OT",
+      "chapters": 4
+    },
+    {
+      "id": "1SA",
+      "testament": "OT",
+      "chapters": 31
+    },
+    {
+      "id": "2SA",
+      "testament": "OT",
+      "chapters": 24
+    },
+    {
+      "id": "1KI",
+      "testament": "OT",
+      "chapters": 22
+    },
+    {
+      "id": "2KI",
+      "testament": "OT",
+      "chapters": 25
+    },
+    {
+      "id": "1CH",
+      "testament": "OT",
+      "chapters": 29
+    },
+    {
+      "id": "2CH",
+      "testament": "OT",
+      "chapters": 36
+    },
+    {
+      "id": "EZR",
+      "testament": "OT",
+      "chapters": 10
+    },
+    {
+      "id": "NEH",
+      "testament": "OT",
+      "chapters": 13
+    },
+    {
+      "id": "EST",
+      "testament": "OT",
+      "chapters": 10
+    },
+    {
+      "id": "JOB",
+      "testament": "OT",
+      "chapters": 42
+    },
+    {
+      "id": "PSA",
+      "testament": "OT",
+      "chapters": 150
+    },
+    {
+      "id": "PRO",
+      "testament": "OT",
+      "chapters": 31
+    },
+    {
+      "id": "ECC",
+      "testament": "OT",
+      "chapters": 12
+    },
+    {
+      "id": "SNG",
+      "testament": "OT",
+      "chapters": 8
+    },
+    {
+      "id": "ISA",
+      "testament": "OT",
+      "chapters": 66
+    },
+    {
+      "id": "JER",
+      "testament": "OT",
+      "chapters": 52
+    },
+    {
+      "id": "LAM",
+      "testament": "OT",
+      "chapters": 5
+    },
+    {
+      "id": "EZK",
+      "testament": "OT",
+      "chapters": 48
+    },
+    {
+      "id": "DAN",
+      "testament": "OT",
+      "chapters": 12
+    },
+    {
+      "id": "HOS",
+      "testament": "OT",
+      "chapters": 14
+    },
+    {
+      "id": "JOL",
+      "testament": "OT",
+      "chapters": 3
+    },
+    {
+      "id": "AMO",
+      "testament": "OT",
+      "chapters": 9
+    },
+    {
+      "id": "OBA",
+      "testament": "OT",
+      "chapters": 1
+    },
+    {
+      "id": "JON",
+      "testament": "OT",
+      "chapters": 4
+    },
+    {
+      "id": "MIC",
+      "testament": "OT",
+      "chapters": 7
+    },
+    {
+      "id": "NAM",
+      "testament": "OT",
+      "chapters": 3
+    },
+    {
+      "id": "HAB",
+      "testament": "OT",
+      "chapters": 3
+    },
+    {
+      "id": "ZEP",
+      "testament": "OT",
+      "chapters": 3
+    },
+    {
+      "id": "HAG",
+      "testament": "OT",
+      "chapters": 2
+    },
+    {
+      "id": "ZEC",
+      "testament": "OT",
+      "chapters": 14
+    },
+    {
+      "id": "MAL",
+      "testament": "OT",
+      "chapters": 4
+    },
+    {
+      "id": "MAT",
+      "testament": "NT",
+      "chapters": 28
+    },
+    {
+      "id": "MRK",
+      "testament": "NT",
+      "chapters": 16
+    },
+    {
+      "id": "LUK",
+      "testament": "NT",
+      "chapters": 24
+    },
+    {
+      "id": "JHN",
+      "testament": "NT",
+      "chapters": 21
+    },
+    {
+      "id": "ACT",
+      "testament": "NT",
+      "chapters": 28
+    },
+    {
+      "id": "ROM",
+      "testament": "NT",
+      "chapters": 16
+    },
+    {
+      "id": "1CO",
+      "testament": "NT",
+      "chapters": 16
+    },
+    {
+      "id": "2CO",
+      "testament": "NT",
+      "chapters": 13
+    },
+    {
+      "id": "GAL",
+      "testament": "NT",
+      "chapters": 6
+    },
+    {
+      "id": "EPH",
+      "testament": "NT",
+      "chapters": 6
+    },
+    {
+      "id": "PHP",
+      "testament": "NT",
+      "chapters": 4
+    },
+    {
+      "id": "COL",
+      "testament": "NT",
+      "chapters": 4
+    },
+    {
+      "id": "1TH",
+      "testament": "NT",
+      "chapters": 5
+    },
+    {
+      "id": "2TH",
+      "testament": "NT",
+      "chapters": 3
+    },
+    {
+      "id": "1TI",
+      "testament": "NT",
+      "chapters": 6
+    },
+    {
+      "id": "2TI",
+      "testament": "NT",
+      "chapters": 4
+    },
+    {
+      "id": "TIT",
+      "testament": "NT",
+      "chapters": 3
+    },
+    {
+      "id": "PHM",
+      "testament": "NT",
+      "chapters": 1
+    },
+    {
+      "id": "HEB",
+      "testament": "NT",
+      "chapters": 13
+    },
+    {
+      "id": "JAS",
+      "testament": "NT",
+      "chapters": 5
+    },
+    {
+      "id": "1PE",
+      "testament": "NT",
+      "chapters": 5
+    },
+    {
+      "id": "2PE",
+      "testament": "NT",
+      "chapters": 3
+    },
+    {
+      "id": "1JN",
+      "testament": "NT",
+      "chapters": 5
+    },
+    {
+      "id": "2JN",
+      "testament": "NT",
+      "chapters": 1
+    },
+    {
+      "id": "3JN",
+      "testament": "NT",
+      "chapters": 1
+    },
+    {
+      "id": "JUD",
+      "testament": "NT",
+      "chapters": 1
+    },
+    {
+      "id": "REV",
+      "testament": "NT",
+      "chapters": 22
+    }
+  ]
+}
