@@ -69,7 +69,7 @@ Book IDs use uppercase USFM codes matching the Agape Bible app (GEN, EXO, MAT, M
 If hosted on GitHub Pages at `https://{user}.github.io/{repo}/`:
 
 ```
-https://gabebrpierce.github.io/interlinear/{BOOK}/{chapter}/{verse}.json
+https://gabebrpierce.github.io/bible-interlinear/{BOOK}/{chapter}/{verse}.json
 ```
 
 For local Vite dev server:
