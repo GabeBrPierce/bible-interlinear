@@ -24,9 +24,9 @@ interlinear/
 ```
 
 Examples:
-- `interlinear/GEN/1/1.json` — Genesis 1:1 (Hebrew)
-- `interlinear/JHN/3/16.json` — John 3:16 (Greek)
-- `interlinear/PSA/23/1.json` — Psalm 23:1 (Hebrew)
+- `https://gabebrpierce.github.io/bible-interlinear/GEN/1/1.json` — Genesis 1:1 (Hebrew)
+- `https://gabebrpierce.github.io/bible-interlinear/JHN/3/16.json` — John 3:16 (Greek)
+- `https://gabebrpierce.github.io/bible-interlinear/PSA/23/1.json` — Psalm 23:1 (Hebrew)
 
 Book IDs use uppercase USFM codes matching the Agape Bible app (GEN, EXO, MAT, MRK, JHN, etc.).
 
@@ -69,7 +69,7 @@ Book IDs use uppercase USFM codes matching the Agape Bible app (GEN, EXO, MAT, M
 If hosted on GitHub Pages at `https://{user}.github.io/{repo}/`:
 
 ```
-https://{user}.github.io/{repo}/interlinear/{BOOK}/{chapter}/{verse}.json
+https://gabebrpierce.github.io/interlinear/{BOOK}/{chapter}/{verse}.json
 ```
 
 For local Vite dev server:
@@ -83,11 +83,3 @@ http://localhost:5173/interlinear/{BOOK}/{chapter}/{verse}.json
 - 66 books (39 OT + 27 NT)
 - 31,219 verses
 - 447,748 words
-
-## Regenerating
-
-```bash
-node tools/parse-interlinear.js
-```
-
-Requires the STEPBible-Data repository at `D:/Users/gabeb/source/repos/bible-data/STEPBible-Data-master`. Override with `--data-dir <path>`. Output directory defaults to `agape-bible/public/interlinear`, override with `--out-dir <path>`.
