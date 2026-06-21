@@ -123,9 +123,49 @@ def base_filename(num):
     return "H%04d.json" % num
 
 
-def root_of_header(content):
-    cons = NONCONS.sub("", NIQQUD.sub("", first_inner(build_body(content), "bdbheb")))
-    return cons if 2 <= len(cons) <= 4 else None
+def consonants(content):
+    """Consonantal skeleton of an entry's headword (first <bdbheb>)."""
+    return NONCONS.sub("", NIQQUD.sub("", first_inner(build_body(content), "bdbheb")))
+
+
+def _same_family(c, head):
+    """Does consonant string c belong to the root family whose head is `head`?
+    BDB files entries by root, so a family is a run of consecutive entries
+    sharing the root's consonants (the shorter being a prefix of the longer),
+    plus preformative derivatives that contain the root as a substring."""
+    if not c or not head:
+        return False
+    k = min(len(c), len(head))
+    if k >= 2 and c[:k] == head[:k]:
+        return True
+    if len(head) >= 3 and head in c:
+        return True
+    if len(c) >= 3 and c in head:
+        return True
+    return False
+
+
+def compute_roots(rows):
+    """Map BDBid -> root by clustering consecutive entries into root families.
+    The root is the family head's consonants (an empty-StrongNumber header when
+    present, otherwise the first lemma of the family). This mirrors BDB's
+    root-based ordering and avoids stale carry-forward across families."""
+    fams = []
+    head_cons = {}
+    fid = -1
+    head = None
+    for r in rows:
+        is_header = not (r["StrongNumber"] or "").strip()
+        c = consonants(r["content"])
+        if head is None or is_header or not _same_family(c, head):
+            fid += 1
+            head = c if c else None
+            head_cons[fid] = c if c else ""
+        elif not head_cons[fid] and c:
+            head_cons[fid] = c
+            head = c
+        fams.append(fid)
+    return {r["BDBid"]: head_cons[f] for r, f in zip(rows, fams)}
 
 
 def load_json(path):
@@ -154,7 +194,7 @@ def main():
         if m:
             suffix_variant.setdefault(int(m.group(1)), fn)
 
-    current_root = None
+    root_map = compute_roots(rows)
     by_num = {}
     multi_rows = skipped_empty = 0
     collisions = Counter()
@@ -162,13 +202,10 @@ def main():
         sn = (r["StrongNumber"] or "").strip()
         nums = split_numbers(sn)
         if not nums:
-            root = root_of_header(r["content"])
-            if root:
-                current_root = root
             skipped_empty += 1
             continue
         entry = parse_entry(r["content"])
-        entry["root"] = current_root
+        entry["root"] = root_map.get(r["BDBid"], "")
         entry["covers"] = ["H%d" % n for n in nums] if len(nums) > 1 else []
         entry["bdbid"] = r["BDBid"]
         if len(nums) > 1:
